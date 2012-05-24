@@ -10,7 +10,7 @@ gem 'bootstrap-will_paginate', '~>0.0.7'
 gem "devise", ">= 2.1.0.rc"
 gem "cancan", ">= 1.6.7"
 gem "rolify", ">= 3.1.0"
-gem 'pg', '0.12.2'
+gem 'pg', '0.13.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

@@ -1,0 +1,48 @@
+<%= provide(:title, "It'star / 伊仕達行銷有限公司") %>
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<div class="modal hide" id="myModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="item active">
+    	<%= image_tag("R0023426.JPG") %>
+    	<div class="carousel-caption">
+                  <h4>First Thumbnail label</h4>
+                  <p>Description for first thumbnail.</p>
+        </div>
+	</div>
+    <div class="item">
+    	<%= image_tag("R0023276.JPG") %>
+    	<div class="carousel-caption">
+                  <h4>Second Thumbnail label</h4>
+                  <p>Description for second thumbnail.</p>
+        </div>
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+<a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
+
+
+
+<a href="#" rel="tooltip" title="first tooltip">hover over me</a>
+<a href="#" class="btn danger" 
+            rel="popover" 
+            data-original-title="title" 
+            data-content="content">popover</a>
+

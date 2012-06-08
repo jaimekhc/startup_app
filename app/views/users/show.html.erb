@@ -1,0 +1,6 @@
+<%= provide(:title, 'Show / 個人資料') %>
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+<% if @user.has_role? :admin %>
+	<%= @user.first_name %> is an administrator
+<% end %>

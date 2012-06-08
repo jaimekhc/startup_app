@@ -1,0 +1,29 @@
+<% provide(:title, 'Account Settings / 帳號設定') %>
+
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name), :html => { :class => 'form-horizontal' } do |f| %>
+
+      
+
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :email, required: true %>
+      <%= f.input :password, label: "New password", required: true, placeholder: "Remain the same" %>
+      <%= f.input :password_confirmation, label: "New password confirmation",  required: true, placeholder: "Remain the same" %>
+      <%= f.input :current_password, required: true, :label => "Current password <br><i>(we need your current password to confirm your changes)</i>" %>
+      <%= f.submit 'Update', :class => 'btn btn-large btn-primary span6' %>
+
+    <% end %>
+    <h3>Cancel my account</h3>
+
+    <p>Unhappy? 
+      <%= link_to "Cancel my account", registration_path(resource_name), :rel => "tooltip", :title => "Permenent Deleted", :confirm => "Are you sure?", "data-method" => :delete %>
+      .
+    </p>
+
+    <%= link_to "Back", :back %>
+  </div>
+</div>

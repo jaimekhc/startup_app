@@ -28,7 +28,10 @@
             <%= render 'layouts/footer' %>
           </footer>
         </div>
-        <%= debug(params) if Rails.env.development? %>
+        <% if Rails.env.development? %>
+          <%= debug(params) %>
+          <%= debug(request.url) %>
+        <% end %> 
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
   </body>

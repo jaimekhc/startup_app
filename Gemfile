@@ -11,6 +11,8 @@ gem "devise", ">= 2.1.0.rc"
 gem "cancan", ">= 1.6.7"
 gem "rolify", ">= 3.1.0"
 gem 'pg', '0.13.2'
+gem 'jquery-rails'
+gem 'simple_form'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -34,8 +36,6 @@ end
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
-
-gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'

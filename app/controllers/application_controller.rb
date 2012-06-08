@@ -34,6 +34,6 @@ class ApplicationController < ActionController::Base
   end
   # Overwriting the sign_in redirect path method
   def after_sign_in_path_for(resource)
-    params[:user]["continue"] || stored_location_for(resource) || user_path(resource) || root_path
+    params["continue"] || stored_location_for(resource) || user_path(resource) || root_path
   end
 end

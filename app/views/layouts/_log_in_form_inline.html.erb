@@ -1,7 +1,7 @@
 <%= simple_form_for resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => 'form-inline'} do |f| %>
 
-	<% if params[:next] %>
-      <%= f.hidden_field :next, :value => params[:next] %>
+	<% if params[:continue] %>
+      <%= f.hidden_field :continue, :value => params[:continue] %>
   	<% end %>
 
 	<%= f.input_field :email, :class => 'input-medium', :placeholder => 'Email' %>
